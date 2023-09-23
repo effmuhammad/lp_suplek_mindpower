@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lp_suplek/view/page/home_page.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:lp_suplek/view/home_screen/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,9 +12,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        textTheme: GoogleFonts.montserratTextTheme(),
+        fontFamily: 'Montserrat',
       ),
-      home: const HomePage(),
+      home: const HomeScreen(),
     );
   }
 }
